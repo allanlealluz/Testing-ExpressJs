@@ -1,10 +1,10 @@
 <h1>Messages</h1>
 <ul>
-    {{#each messages}}
-        <li>{{this}}</li>
+    {{#each message}}
+        <li>{{text}}</li>
     {{/each}}
 </ul>
 <form action="/message" method="post">
-<input type="text" name="content" id="content"/>
+<input type="text" name="messageText" id="content"/>
 <button value="Enviar" type="submit">Enviar</button>
 </form>
