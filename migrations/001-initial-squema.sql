@@ -1,7 +1,10 @@
---Up
-Create Table Message(
-    id INTEGER PRIMARY KEY,
-    text STRING
+-- Up
+
+CREATE TABLE Message (
+  id INTEGER PRIMARY KEY,
+  text STRING
 );
---Down
+
+-- Down
+
 DROP TABLE Message;

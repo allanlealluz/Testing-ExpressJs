@@ -16,7 +16,7 @@ app.set("views", "./views");
 app.get("/", async (req, res) => {
     const db = await dbPromise
     const message = await db.all("SELECT * FROM Message")
-    res.render('home', { messages }); // Passar um objeto contendo as mensagens
+    res.render('home', { message }); // Passar um objeto contendo as mensagens
 });
 app.post('/message', async (req, res) => {
     const db = await dbPromise
